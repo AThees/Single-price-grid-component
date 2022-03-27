@@ -99,6 +99,11 @@ body {
   box-shadow: 10px 10px 15px #31a189;
 }
 
+.botao:active{
+  background: hsla(71, 73%, 54%, 0.768);
+  transform: scale(0.95);
+}
+
 .inferior-direita {
   position: absolute;
   bottom: 0;
