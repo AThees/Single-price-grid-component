@@ -19,8 +19,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
   padding: 10px;
-  box-shadow: 10px 10px 15px #D7E5F2;
-
+  box-shadow: 10px 10px 15px #d7e5f2;
 }
 
 .superior h1 {
@@ -52,7 +51,7 @@ body {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.container-baixo h3 {
+.titulo-inferior-direita, .titulo-inferior-esquerda {
   color: #e4fbfb;
   margin-left: 2rem;
   margin-top: 2rem;
@@ -69,7 +68,7 @@ body {
 }
 
 .valor {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: 400;
   margin-left: 2rem;
@@ -83,8 +82,8 @@ body {
 }
 
 .access-descricao {
-  color: #FFFFFF;
-  margin: 1rem 0 0 2rem; 
+  color: #ffffff;
+  margin: 1rem 0 0 2rem;
 }
 
 .botao {
@@ -94,10 +93,10 @@ body {
   background: hsl(71, 73%, 54%);
   border: none;
   border-radius: 0.3rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
   margin: 2rem 12.5% 0 12.5%;
-  box-shadow: 10px 10px 15px #31A189;
+  box-shadow: 10px 10px 15px #31a189;
 }
 
 .inferior-direita {
@@ -129,4 +128,58 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 660px) {
+  .container {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    padding: 10px;
+    box-shadow: 10px 10px 15px #d7e5f2;
+  }
+
+  .superior {
+    position: relative;
+    margin-top: -25px;
+    width: 100%;
+    height: 40%;
+  }
+
+  .container-baixo {
+    position: absolute;
+    height: 68%;
+    width: 100%;
+  }
+
+  .titulo-inferior-direita {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .titulo-inferior-esquerda {
+    color: #e4fbfb;
+    margin-left: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .inferior-esquerda {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background: #2bb3b1;
+    border-radius: 0;
+  }
+
+  .inferior-direita {
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: #4abebd;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
 }
