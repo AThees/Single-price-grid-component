@@ -113,6 +113,16 @@ body {
   font-weight: 700;
 }
 
+.botao:hover {
+  cursor: pointer;
+  background: hsl(71, 86%, 58%);
+}
+
+.botao:active {
+  background: hsl(71, 63%, 51%);
+  transform: scale(0.9);
+}
+
 .conteudo__inferior-direita {
   background: var(--Right-Bg);
   width: 50%;
